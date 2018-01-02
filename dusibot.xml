@@ -90,6 +90,13 @@
         <output>
             <item value="42, 76, 4000, 41, 19, 51, 25"/>
         </output>
+        
+            <input>
+        <pattern value="repeat( * (телефон|м*бильный) (юльк*|жены) * )"/>
+
+        <output>
+            <item value="915, 499, 25, 14"/>
+        </output>
     </input>
 
 </context>
