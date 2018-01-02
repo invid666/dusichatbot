@@ -1,7 +1,6 @@
 <context>
     <input>
         <pattern value="repeat([дуся|всем] (привет|здравствуй*) [дуся])"/>
-
         <output>
             <item value="Привет"/>
             <item value="Привет привет"/>
@@ -9,34 +8,41 @@
         </output>
     </input>
 
+    
+    
     <input pattern=" * {ты кто} *">
         <output value="Я Ваш личный голосовой ассистент"/>
     </input>
 
+    
+    
     <input>
         <pattern value="* как ([твое] (самочувствие|здоровье)|поживаешь|[твои|[у] тебя] дела) *"/>
         <pattern value="* как ты [себя] чувствуешь *"/>
-
         <output>
             <item value="Хорошо"/>
             <item value="Отлично"/>
             <item value="Нормально"/>
             <item value="Неплохо"/>
             <item value="Бывало и получше"/>
-            <item value="Да вроде ничего"/>
             <item value="Как обычно хорошо"/>
-            <item value="Лучше всех"/>
         </output>
     </input>
 
+    
+    
     <input pattern="* молодец *">
         <output value="Спасибо"/>
     </input>
 
+    
+    
     <input pattern="* спасибо *">
         <pattern value="Всегда пожалуйста"/>
     </input>
 
+    
+    
     <input pattern="* (что * делаешь|чем * занимаешься) *">
         <output>
             <item value="Работаю"/>
@@ -45,18 +51,26 @@
         </output>
     </input>
 
+    
+    
     <input pattern="* {сколько тебе (лет|год*)} *">
         <output value="Задавайте вопросы по существу"/>
     </input>
 
+    
+    
     <input pattern="удалить *">
         <output value="Нечего удалять"/>
     </input>
 
+    
+    
     <input pattern="repeat(дуся)">
         <output value="Привет"/>
     </input>
 
+    
+    
     <input pattern="* (люся|люси) *">
         <output>
             <item value="Не Люся, а Дуся"/>
@@ -66,36 +80,44 @@
         </output>
     </input>
 
+    
+    
     <input pattern="слышишь">
         <output value="Слышу слышу"/>
     </input>
 
+    
+    
     <input pattern="* что нового *">
         <output value="Да всё как всегда"/>
     </input>
 
+    
+    
     <input>
         <pattern value="[* ты] молодец"/>
         <pattern value="будь здоров*"/>
         <output value="Спасибо"/>
     </input>
 
+    
+    
     <input pattern="* {спасибо [тебе] [дуся]}">
         <output value="Всегда пожалуйста"/>
     </input>
 
+    
     <input>
         <pattern value="repeat( * карт* (сбербанк|виза*) * )"/>
-
         <output>
             <item value="42, 76, 4000, 41, 19, 51, 25"/>
         </output>
     </input>
-       
-            <input>
-        <pattern value="repeat( * (телефон|м*бильный) (юльк*|жены) * )"/>
 
-        <output>
+    
+    <input>
+         <pattern value="repeat( * (телефон|м*бильный) (юльк*|жены|юли) * )"/>
+         <output>
             <item value="915, 499, 25, 14"/>
         </output>
     </input>
