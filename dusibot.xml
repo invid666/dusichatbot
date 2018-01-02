@@ -84,14 +84,12 @@
         <output value="Всегда пожалуйста"/>
     </input>
 
-    <input pattern="* ты * (дура*|тупая|тупой|дебил*) *">
+    <input>
+        <pattern value="repeat( * карт* (сбербанк|виза*) * )"/>
+
         <output>
-            <item value="Без комментариев"/>
-            <item value="Задавайте вопросы по существу"/>
+            <item value="4276 4000 4119 5125"/>
         </output>
     </input>
 
-    <input pattern="[[я] хочу | *кача*] (порн* | обои) *">
-        <output value="Это не входит в мои функции"/>
-    </input>
 </context>
