@@ -71,7 +71,7 @@
         <output value="Всегда пожалуйста"/>
     </input>
     
-        <input pattern="* ( * карт* (сбербанк|виза*) * )">
+        <input pattern="* ( [номер] карт* (сбер*|виза|visa) )">
         <output value="42, 76, 4000, 41, 19, 51, 25"/>
     </input>
     
