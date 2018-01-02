@@ -88,7 +88,7 @@
         <pattern value="repeat( * карт* (сбербанк|виза*) * )"/>
 
         <output>
-            <item value="4276 4000 4119 5125"/>
+            <item value="42   76   4000   41   19   51   25"/>
         </output>
     </input>
 
